@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu a {
+    background-color: #e5e5e5;
+    padding: 12px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+/* Drop down*/
+/* Unorderlist */
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+} */
+
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(144, 137, 137);
+    
+    
+}
+
+li.dropdown {
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(255, 239, 239, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(183, 168, 168);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+}
+
+.dropdown-content a:hover {
+    background-color: #dd2222;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* end of dropdown*/
+
+
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+.right2 {
+  background-color: #420f0f;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+style Footer {
+background-color: #e5e5e5;
+padding: 10px;
+margin-top: 7px;
+text-align-last: center;
+}
+div.sticky {
+    margin-top: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    color: #9f6767;
+    background-color: #5d1d0d;
+    border: 2px solid #2f1108;
+    
+}
