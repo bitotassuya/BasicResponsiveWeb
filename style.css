@@ -137,3 +137,15 @@ div.sticky {
     border: 2px solid #2f1108;
     
 }
+
+/* Progress Bar*/
+#myProgress {
+    width: 100%;
+    background-color: rgb(73, 64, 64);
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #f90b0b;
+}
