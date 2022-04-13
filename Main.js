@@ -12,7 +12,8 @@ function myFunction() {
         i = 0;
       } else {
         width++;
-        elem.style.width = width + "%";
+        elem.style.width = width + "%";  
+        elem.innerHTML = width  + "%";
       }
     }
   }
