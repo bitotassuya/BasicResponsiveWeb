@@ -1,120 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- icon -->
-    <link rel="icon" type="image/x-icon" href="Pictures/Icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap -->
-    <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- เชื่อมกับ javascript -->
-    <script type="text/Javascript" src="Main.js"></script>
-    <!-- เชื่อมกับ css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body style="font-family: Verdana; color: #aaaaaa">
-    <!-- Cover หน้าปกเว็บ -->
-    <img
-      src="Pictures/CoverPage.png"
-      class="img-rounded"
-      width="460"
-      height="345"
-    />
-    <div style="background-color: #480707; padding: 50px; text-align: center">
-      <h1>Hello World</h1>
-    </div>
 
-    <div style="overflow: auto">
-      <!-- Nav Menu Left-->
-      <div class="menu">
-        <li>
+<head>
+  <!-- icon -->
+  <link rel="icon" type="image/x-icon" href="Pictures/Icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- เชื่อมกับ javascript -->
+  <script type="text/Javascript" src="Main.js"></script>
+  <!-- เชื่อมกับ css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="font-family: Verdana; color: #aaaaaa">
+  <!-- Cover หน้าปกเว็บ -->
+  <img src="Pictures/CoverPage.png" class="img-rounded" width="460" height="345" />
+  <div style="background-color: #480707; padding: 50px; text-align: center">
+    <h1>Hello World</h1>
+  </div>
+
+  <div style="overflow: auto">
+    <!-- Nav Menu Left-->
+    <div class="menu">
+      <li>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a onclick="myFunction()">Link 6</a>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Link 7</a>
+        <div class="dropdown-content">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
           <a href="#">Link 4</a>
           <a href="#">Link 5</a>
-          <a onclick="myFunction()">Link 6</a>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Link 7</a>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-          </div>
-        </li>
-      </div>
-      <!-- Center and Right-->
+          <a href="#">Link 6</a>
+        </div>
+      </li>
+    </div>
+    <!-- Center and Right-->
 
-      <div class="main">
-        <div class="sticky-top">I am sticky!</div>
+    <div class="main">
+      <div class="sticky-top">I am sticky!</div>
 
-        <h2>Lorum Ipsum</h2>
-        <button type="button" class="btn btn-info">อ่านต่อ</button>
-        <div class="bg-primary"
-        <p class="text-light bg-dark">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.
-        </p></div>
-      </div>
-
-      <div class="right">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      </div>
-      <!-- Center and Right2-->
-
-      <div class="main">
-        <h2>Lorum Ipsum</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat.
+      <h2>Lorum Ipsum</h2>
+      <button type="button" class="btn btn-info">อ่านต่อ</button>
+      <div class="bg-primary" <p class="text-light bg-dark">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
         </p>
       </div>
+    </div>
 
-      <div class="right">
-        <h2>Profile</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      </div>
-      <!-- Down Menu-->
-      <div class="right2">
-        <h2>Profile</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      </div>
-      <div class="right2">
-        <h2>Profile</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      </div>
+    <div class="right">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
     </div>
-    <!-- Progress Bar-->
-  
-    <div class="progress ;float-start ;clearfix " id="myProgress">
-      <div
-        class="progress-bar"
-        id="myBar"
-        role="progressbar"
-        aria-valuenow="70"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="width: 10%"
-      >
-        <span class="sr-only">70% Complete</span>
+    <!-- Center and Right2-->
+
+    <div class="main">
+      <h2>Lorum Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+    </div>
+
+    <div class="right">
+      <h2>Profile</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <!-- Down Menu-->
+    <div class="right2">
+      <h2>Profile</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
     </div>
-    <!-- Alert -->
-    <div class="alert alert-success">
-      <strong>Success!</strong> Indicates a successful or positive action.
+    <div class="right2">
+      <h2>Profile</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
     </div>
-    <div class="style Footer"><p>© copyright w3schools.com</p></div>
-  </body>
+  </div>
+  <!-- Progress Bar-->
+
+  <div class="progress ;float-start ;clearfix " id="myProgress">
+    <div class="progress-bar" id="myBar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+      style="width: 10%">
+      <span class="sr-only">70% Complete</span>
+    </div>
+  </div>
+  <!-- Alert -->
+  <div class="alert alert-success">
+    <strong>Success!</strong> Indicates a successful or positive action.
+  </div>
+  <div class="style Footer">
+    <p>© copyright w3schools.com</p>
+  </div>
+</body>
+
 </html>
