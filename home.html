@@ -75,29 +75,52 @@
         volutpat.
       </p>
     </div>
-
+    <!--Right Layout-->
     <div class="right">
-      <h2>Profile</h2>
+      <h2>เข้าสู่ระบบ/Sign in</h2>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      <!-- Login Form-->
+
+      <h2>Modal Login Form</h2>
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img src="Pictures/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
     </div>
 
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+
+
     <!-- Down Menu-->
+
     <div class="right2">
       <h2>Profile</h2>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
@@ -107,6 +130,7 @@
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
     </div>
   </div>
+
   <!-- Progress Bar-->
 
   <div class="progress ;float-start ;clearfix " id="myProgress">
