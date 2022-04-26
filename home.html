@@ -31,7 +31,7 @@
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
         <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
+        <a onclick="ReplaceLink()">Link 5</a>
         <a onclick="myFunction()">Link 6</a>
       </li>
       <li class="dropdown">
@@ -50,10 +50,10 @@
 
     <div class="main">
       <div class="sticky-top">I am sticky!</div>
-
-      <h2>Lorum Ipsum</h2>
-      <button type="button" class="btn btn-info">อ่านต่อ</button>
-      <div class="bg-primary" <p class="text-light bg-dark">
+      <!--Margin Spacing-->
+      <h2 class="bg-success mb-0">Lorum Ipsum</h2>
+      <button type="button" class="btn btn-info mb-3">อ่านต่อ</button>
+      <div class="bg-primary mb-4" p class="text-light bg-dark mb-4">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat.
@@ -67,13 +67,14 @@
     </div>
     <!-- Center and Right2-->
 
-    <div class="main">
+    <div class="main bg-primary">
       <h2>Lorum Ipsum</h2>
-      <p>
+      <p class="bg-success mb4">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat.
       </p>
+
     </div>
     <!--Right Layout-->
     <div class="right">
@@ -81,13 +82,11 @@
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
       <!-- Login Form-->
 
-      <h2>Modal Login Form</h2>
-
       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
       <div id="id01" class="modal">
 
-        <form class="modal-content animate" action="/action_page.php" method="post">
+        <form onsubmit="return_login()" class="modal-content animate" action="/action_page.php" method="post">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
               title="Close Modal">&times;</span>
@@ -139,6 +138,9 @@
       <span class="sr-only">70% Complete</span>
     </div>
   </div>
+
+
+
   <!-- Alert -->
   <div class="alert alert-success">
     <strong>Success!</strong> Indicates a successful or positive action.
@@ -146,6 +148,23 @@
   <div class="style Footer">
     <p>© copyright w3schools.com</p>
   </div>
+  <!-- Margin Side-->
+  <h1 class="mt-5 bg-warning">Margin Top</h1>
+  <h1 class="mb-5 bg-warning">Margin Botton</h1>
+  <h1 class="ms-5 bg-warning">Margin Left</h1>
+  <h1 class="me-5 bg-warning">Margin Right</h1>
+
+  <!-- ML&MR Spacing-->
+  <h1 class="me-5 bg-primary">Margin Right5</h1>
+  <h1 class="ms-3 bg-primary">Margin Left3</h1>
+
+  <!--MX-->
+  <h1 class="bg-danger mx-3">Margin Left&Right</h1>
+  <!--MY-->
+  <h1 class="bg-danger my-4">Margin Top&Down</h1>
+  <!--Blank-->
+  <h1 class="bg-warning">Margin Blank</h1>
 </body>
+
 
 </html>

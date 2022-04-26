@@ -163,8 +163,8 @@ input[type="password"] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04aa6d;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -221,7 +221,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #000000;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -276,4 +276,8 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+}
+
+.bg-mynav {
+  background-color: #2c3e50;
 }
