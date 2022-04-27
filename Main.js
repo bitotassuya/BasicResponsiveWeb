@@ -89,4 +89,17 @@ function login() {
   return false;
 }
 
+/* text loading */
 
+var indexLoading = 0;
+var txt = `Lorem ipsum dolor sit amet, consectetuer"
+/*adipiscing elit, sed diamnonummy nibh euismod 
+tincidunt ut laoreet dolore magna aliquam eratvolutpat.`;
+var speed = 50;
+function typeWriter() {
+  if (indexLoading < txt.length) {
+    document.getElementById("textLoading").innerHTML += txt.charAt(indexLoading);
+    indexLoading++;
+    setTimeout(typeWriter, speed);
+  }
+}
