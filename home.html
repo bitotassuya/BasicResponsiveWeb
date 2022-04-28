@@ -26,17 +26,20 @@
   <div style="overflow: auto">
     <!-- Nav Menu Left-->
     <div class="menu">
-      <li>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a onclick="ReplaceLink()">Link 5</a>
-        <a onclick="myFunction()">Link 6</a>
-      </li>
-      <li class="dropdown">
+      <div id="mySidenavhover" class="mySidenavhover ">
+
+        <li>
+          <a href="#" id="about">Link 1</a>
+          <a href="#" id="blog">Link 2</a>
+          <a href="#" id="projects">Link 3</a>
+          <a href="#" id="contact">Link 4</a>
+          <a id="contact1" onclick="ReplaceLink()">Link 5</a>
+          <a id="contact2" onclick="myFunction()">Link 6</a>
+        </li>
+      </div>
+      <li id="contact3" class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Link 7</a>
-        <div class="dropdown-content">
+        <div class="dropdown-content ">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
@@ -45,6 +48,7 @@
           <a href="#">Link 6</a>
         </div>
       </li>
+
     </div>
     <!-- Center and Right-->
 

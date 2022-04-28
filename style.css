@@ -297,3 +297,52 @@ span.psw {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
+
+/* Hoverable Sidenav Buttons */
+#mySidenavhover a {
+  position: absolute;
+  left: -80px;
+  transition: 0.5s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenavhover a:hover {
+  left: 0;
+}
+
+#about {
+  margin-top: 20px;
+  background-color: #04aa6d;
+}
+
+#blog {
+  margin-top: 80px;
+  background-color: #2196f3;
+}
+
+#projects {
+  margin-top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  margin-top: 200px;
+  background-color: #555;
+}
+#contact1 {
+  margin-top: 260px;
+  background-color: rgb(22, 147, 122);
+}
+#contact2 {
+  margin-top: 320px;
+  background-color: rgb(135, 15, 123);
+}
+#contact3 {
+  margin-top: 380px;
+  background-color: rgb(97, 49, 139);
+}
