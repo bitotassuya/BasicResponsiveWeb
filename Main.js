@@ -19,18 +19,22 @@ function myFunction() {
         width++;
         elem.style.width = width + "%";
         elem.innerHTML = width + "%";
-        location.href = "index.html";
 
       }
+
+      //hreflink
+      setTimeout(() => {
+        location.href = "index.html";
+      }, "2000")
+
     }
+
 
   }
 
 }
-//hreflink
-function ReplaceLink() {
-  location.href = "index.html";
-}
+
+
 
 // Get the modal
 var modal = document.getElementById("id01");
