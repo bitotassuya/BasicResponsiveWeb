@@ -107,3 +107,15 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+
+/*Responsive Topnav*/
+
+function myFunctionTopNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
