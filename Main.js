@@ -1,3 +1,4 @@
+//link to index,loading,script
 var i = 0;
 function myFunction() {
   alert("หน้าเว็บไม่พร้อมใช้งาน");
@@ -34,6 +35,22 @@ function myFunction() {
 
 }
 
+//link to home,loading
+
+function LogoutPage() {
+
+  //hreflink
+  setTimeout(() => {
+    location.href = "home.html";
+  }, "2000")
+
+}
+/*
+var LogoutPage = document.getElementById("LogoutPage");
+LogoutPage.addEventListener("click", function () {
+  window.location.href = "http://www.w3schools.com";
+
+}, false); */
 
 
 // Get the modal
@@ -117,5 +134,20 @@ function myFunctionTopNav() {
     x.className += " responsive";
   } else {
     x.className = "topnav";
+  }
+}
+
+
+/* Video */
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunctionVideo() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
   }
 }
