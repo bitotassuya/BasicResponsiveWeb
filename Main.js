@@ -1,3 +1,4 @@
+
 //link to index,loading,script
 var i = 0;
 function myFunction() {
@@ -139,15 +140,17 @@ function myFunctionTopNav() {
 
 
 /* Video */
+/*
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 
 function myFunctionVideo() {
-  if (video.paused) {
+  if (!video.paused) {
     video.play();
     btn.innerHTML = "Pause";
   } else {
     video.pause();
     btn.innerHTML = "Play";
   }
-}
+}*/
+

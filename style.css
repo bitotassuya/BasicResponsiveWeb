@@ -430,3 +430,11 @@ span.psw {
   color: black;
 }
 /* end of*/
+
+/* Hide video*/
+.hideVideo {
+  display: block;
+  z-index: 999;
+  margin-top: 10px;
+  margin-left: 10px;
+}

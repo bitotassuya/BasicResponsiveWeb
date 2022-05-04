@@ -19,6 +19,8 @@
   <script type="text/Javascript" src="Main.js"></script>
   <!-- เชื่อมกับ css -->
   <link rel="stylesheet" href="style.css" />
+
+
 </head>
 
 <body style="font-family: Verdana; color: #aaaaaa">
@@ -106,71 +108,98 @@
 
     </div>
     <!--My Video Promote-->
-    <video autoplay muted loop id="myVideo">
-      <source src="video/Herbs.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="content">
-      <h1>Heading</h1>
-      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis
-        neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine
-        molestiae, ad
-        mutat oblique delicatissimi pro.</p>
-      <button id="myBtn" onclick="myFunctionVideo()">Pause</button>
-    </div>
-    <!--end my video Promote-->
-    <!--Right Layout-->
-    <div class="right">
-      <h2>เข้าสู่ระบบ/Sign in</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      <!-- Login Form-->
+    <div class="hideVideo">
+      <video id="myVideo" src="video/Herbs.mp4" autoplay muted loop>
 
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="content">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis
+          neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine
+          molestiae, ad
+          mutat oblique delicatissimi pro.</p>
+        <button id="myBtn" onclick="myFunctionVideo()" type="button">Pause</button>
+        <button id="myBtnClose" onclick="closeVideo()" type="button">Close</button>
 
-      <div id="id01" class="modal">
-
-        <form onsubmit="return_login()" class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-              title="Close Modal">&times;</span>
-            <img src="Pictures/img_avatar2.png" alt="Avatar" class="avatar">
-          </div>
-
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-              class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
       </div>
+    </div>
+  </div>
 
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    var myBtnClose = document.getElementById("myBtnClose");
+
+    var hideVideo = document.getElementsByClassName("hideVideo")[0];
+
+    function myFunctionVideo() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else if (video.play) {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    function closeVideo() {
+      hideVideo.style.display = "none";
+
+    }
+  </script>
+  <!--end my video Promote-->
+  <!--Right Layout-->
+  <div class="right">
+    <h2>เข้าสู่ระบบ/Sign in</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <!-- Login Form-->
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+      <form onsubmit="return_login()" class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <img src="Pictures/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
     </div>
 
+  </div>
 
 
-    <!-- Down Menu-->
 
-    <div class="right2">
-      <h2>Profile</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-    </div>
-    <div class="right2">
-      <h2>Profile</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-    </div>
+  <!-- Down Menu-->
+
+  <div class="right2">
+    <h2>Profile</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+  <div class="right2">
+    <h2>Profile</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
   </div>
 
   <!-- Progress Bar-->
